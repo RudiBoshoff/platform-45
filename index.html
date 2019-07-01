@@ -1,0 +1,161 @@
+<!-- RUDI BOSHOFF -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Platform 45</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<!-- PRELOAD Images -->
+	<link rel="prefetch" href="img/profile-hover.svg">
+	<link rel="prefetch" href="img/card-white.svg">
+	<link rel="prefetch" href="img/male-white.svg">
+	<link rel="prefetch" href="img/female-white.svg">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="item item-1">
+
+			<img class="profile" src="img/profile.svg">
+      <h1>Front-end challenge!</h1>
+      <p>This is my design for Platform 45
+        <br>- Rudi Boshoff </p>
+      <div class="item-1-toggle">
+        <img src="img/toggle.svg">
+      </div>
+
+    </div>
+    <div class="item item-2">
+      <form>
+        <div class="form-container">
+
+
+          <!-- NAME -->
+          <div class="name heading heading-1">
+            <label>Name</label>
+          </div>
+          <div class="name content content-1">
+            <input type="text" id="name" name="name">
+          </div>
+
+
+          <!-- GENDER -->
+          <div class="gender heading heading-2">
+            <label>Gender</label>
+          </div>
+          <div class="gender content content-2">
+
+            <!--Male-->
+            <input type="radio" class="gender-radio-item" value="male" name="gender" id="male">
+            <label class="gender-label-item" for="male">
+              <img src="img/male.svg" class="gender-radio-img">
+            </label>
+            <span class="male">Male</span>
+
+            <!--Female-->
+            <input type="radio" class="gender-radio-item" value="female" name="gender" id="female">
+            <label class="gender-label-item" for="female">
+              <img src="img/female.svg" class="gender-radio-img">
+            </label>
+            <span>Female</span>
+
+          </div>
+
+
+          <!-- DATE OF BIRTH -->
+          <div class="dob heading heading-3">
+            <label>Date of Birth</label>
+          </div>
+          <div class="dob content content-3">
+            <input type="date" id="dob" name="dob">
+          </div>
+
+
+          <!-- EMAIL -->
+          <div class="email heading heading-4">
+            <span class="hidden invalid dot">&#9679</span>
+            <label>Email</label>
+          </div>
+          <div class="email content content-4">
+            <input type="email" id="email" name="email">
+            <span class="invalid-email hidden">Invalid email address</span>
+          </div>
+
+
+          <!-- MOBILE -->
+          <div class="mobile heading heading-5">
+            <label>Mobile</label>
+          </div>
+          <div class="mobile content content-5">
+            <input type="tel" id="phone" name="phone"
+              pattern="[[:ascii:]][0-9]{2} [0-9]{5} [0-9]{5}">
+          </div>
+
+
+          <!-- CUSTOMER ID -->
+          <div class="customer-ID heading heading-6">
+            <label>Customer ID</label>
+          </div>
+          <div class="customer-ID content content-6">
+            <input type="text" id="customerID" name="customerID">
+          </div>
+
+
+          <!-- MEMBERSHIP -->
+          <div class="membership heading heading-7">
+            <label>Membership</label>
+          </div>
+          <div class="membership content content-7">
+
+            <!--Classic card-->
+            <input type="radio" class="membership-radio-item" value="" name="membership" id="classic">
+            <label class="membership-label-item" for="classic">
+              <img src="img/card.svg" class="membership-radio-img">
+            </label>
+            <span>Classic</span>
+
+            <!--Silver card-->
+            <input type="radio" class="membership-radio-item" value="" name="membership" id="silver">
+            <label class="membership-label-item" for="silver">
+              <img src="img/card.svg" class="membership-radio-img">
+            </label>
+            <span>Silver</span>
+
+            <!--Gold card-->
+            <input type="radio" class="membership-radio-item" value="" name="membership" id="gold">
+            <label class="membership-label-item" for="gold">
+              <img src="img/card.svg" class="membership-radio-img">
+            </label>
+            <span>Gold</span>
+
+          </div>
+
+
+          <!-- SAVE/CANCEL-->
+          <div class="submit heading heading-7">
+            <label></label>
+          </div>
+          <div class="submit content content-8">
+            <input type="reset" id="cancel" name="cancel" value="CANCEL">
+            <input type="submit" id="save" name="save" value="SAVE" class="save">
+          </div>
+
+        </div>
+      </form>
+    </div>
+    <div class="item item-3 hidden">
+
+      <h1>My world today</h1>
+      <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. <a href="#">View all days</a> eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat.</p>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,503 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  background-color: #ddd; }
+
+body {
+  background-color: #ddd; }
+
+.container {
+  padding: 66px 37px;
+  display: flex;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  justify-content: center; }
+
+.item-1 {
+  background-color: #ffd500;
+  flex-basis: 552.5px; }
+
+.item-2 {
+  background-color: #fff;
+  flex-basis: 807.5px; }
+
+.item-3 {
+  background-color: #ff9200;
+  flex-basis: 807.5px; }
+
+.item-1 {
+  border-top-left-radius: 42.5px;
+  border-bottom-left-radius: 42.5px;
+  height: 892px;
+  text-align: center; }
+  .item-1 h1 {
+    padding-top: 117px;
+    font-family: Arial;
+    font-size: 36px;
+    color: #383838;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold; }
+  .item-1 p {
+    padding-top: 17px;
+    padding-bottom: 76.8px;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    color: #383838; }
+
+.profile {
+  padding-top: 117px; }
+  .profile:hover {
+    content: url("img/profile-hover.svg");
+    cursor: pointer; }
+
+/* TOGGLE "BUTTON" */
+.item-1-toggle {
+  padding-bottom: 120px; }
+  .item-1-toggle img {
+    transition-property: transform;
+    transition-duration: 0.25s; }
+    .item-1-toggle img:hover {
+      cursor: pointer; }
+
+.hidden {
+  display: none; }
+
+.rotate {
+  transform: rotate(180deg); }
+
+/* END OF TOGGLE "BUTTON"*/
+.item-3 {
+  border-top-right-radius: 42.5px;
+  border-bottom-right-radius: 42.5px;
+  padding: 0 20px;
+  text-align: center; }
+  .item-3 h1 {
+    padding: 161px 50px 0;
+    text-align: left;
+    font-family: Arial;
+    font-size: 36px;
+    color: #383838;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold; }
+  .item-3 p {
+    padding: 41px 50px 0;
+    text-align: left;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    color: #383838; }
+  .item-3 a {
+    font-weight: bold;
+    color: #383838; }
+
+.item-2 {
+  border-top-right-radius: 42.5px;
+  border-bottom-right-radius: 42.5px;
+  padding: 100px 20px; }
+
+.form-container {
+  margin: 0 auto;
+  display: grid;
+  width: 520px;
+  grid-template-areas: "name-h name-c" "gender-h gender-c" "dob-h  dob-c" "email-h email-c" "mobile-h mobile-c" "id-h id-c" "card-h card-c" ". save-c";
+  grid-gap: 20px; }
+  .form-container .heading {
+    width: 120px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #373d40;
+    align-self: center; }
+  .form-container .content {
+    width: 380px;
+    justify-self: center; }
+
+.heading-1 {
+  grid-area: name-h; }
+
+.heading-2 {
+  grid-area: gender-h; }
+
+.heading-3 {
+  grid-area: dob-h; }
+
+.heading-4 {
+  grid-area: email-h; }
+
+.heading-5 {
+  grid-area: mobile-h; }
+
+.heading-6 {
+  grid-area: id-h; }
+
+.heading-7 {
+  grid-area: card-h; }
+
+.content-1 {
+  grid-area: name-c; }
+
+.content-2 {
+  grid-area: gender-c; }
+
+.content-3 {
+  grid-area: dob-c; }
+
+.content-4 {
+  grid-area: email-c; }
+
+.content-5 {
+  grid-area: mobile-c; }
+
+.content-6 {
+  grid-area: id-c; }
+
+.content-7 {
+  grid-area: card-c; }
+
+.content-8 {
+  grid-area: save-c;
+  text-align: center; }
+
+.name input {
+  font-family: Helvetica;
+  font-weight: 500;
+  color: #373d40;
+  width: 100%;
+  border: 0;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  height: 53px;
+  border-radius: 5.3px;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  background-color: #f5f8f9; }
+  .name input:hover {
+    border: solid 1.2px #cad7dd;
+    cursor: pointer;
+    transition: .25s; }
+
+.gender input {
+  display: none; }
+  .gender input + label {
+    display: inline-block;
+    background-color: #f5f8f9;
+    border: 1.2px solid #f5f8f9;
+    border-radius: 100%;
+    height: 53px;
+    width: 52.9px; }
+    .gender input + label:hover {
+      border: 1.2px solid #b1bfcd;
+      cursor: pointer;
+      transition: .25s; }
+  .gender input:checked + label {
+    background-color: #b1bfcd;
+    border: 1.2px solid #b1bfcd; }
+.gender input[value="male"]:checked + label > * {
+  content: url("img/male-white.svg");
+  width: 25.4px;
+  height: 25.4px; }
+.gender input[value="female"]:checked + label > * {
+  content: url("img/female-white.svg"); }
+.gender label > * {
+  position: relative;
+  top: 13px;
+  left: 14px; }
+.gender label {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle; }
+.gender span {
+  position: relative;
+  margin-right: 13px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #b1bfcd; }
+
+.dob input {
+  width: 100%;
+  border: 0;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  height: 53px;
+  border-radius: 5.3px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  background-color: #f5f8f9;
+  color: #b1bfcd; }
+  .dob input:hover {
+    border: solid 1.2px #cad7dd;
+    cursor: pointer;
+    transition: .25s; }
+  .dob input:invalid {
+    border: solid 1.2px var(--orange);
+    background-color: var(--pale-grey);
+    color: var(--orange); }
+  .dob input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none; }
+  .dob input::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url("img/dob.svg") no-repeat;
+    width: 20px;
+    height: 20px; }
+    .dob input::-webkit-calendar-picker-indicator:hover {
+      cursor: pointer; }
+
+.email input {
+  width: 100%;
+  border: 0;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  height: 53px;
+  border-radius: 5.3px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  background-color: #f5f8f9;
+  color: #b1bfcd; }
+  .email input:hover {
+    border: solid 1.2px #cad7dd;
+    cursor: pointer;
+    transition: .25s; }
+  .email input:invalid {
+    border: solid 1.2px #ff9200;
+    background-color: #f5f8f9;
+    color: #ff9200; }
+
+.invalid {
+  color: #ff9200; }
+
+.invalid-email {
+  position: relative;
+  color: #ff9200;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  width: 114px;
+  height: 14px;
+  left: 265px;
+  top: -1px; }
+
+.dot {
+  position: relative;
+  top: -10px;
+  padding: 0;
+  margin: 0; }
+
+.mobile input {
+  width: 100%;
+  border: 0;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  height: 53px;
+  border-radius: 5.3px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  background-color: #f5f8f9;
+  color: #b1bfcd; }
+  .mobile input:hover {
+    border: solid 1.2px #cad7dd;
+    cursor: pointer;
+    transition: .25s; }
+
+.customer-ID input {
+  width: 100%;
+  border: 0;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  height: 53px;
+  border-radius: 5.3px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  background-color: #f5f8f9;
+  color: #b1bfcd; }
+  .customer-ID input:hover {
+    border: solid 1.2px #cad7dd;
+    cursor: pointer;
+    transition: .25s; }
+
+.membership input {
+  display: none; }
+  .membership input + label {
+    display: inline-block;
+    background-color: #f5f8f9;
+    border: 1.2px solid #f5f8f9;
+    border-radius: 100%;
+    height: 53px;
+    width: 52.9px; }
+    .membership input + label:hover {
+      border: 1.2px solid #b1bfcd;
+      cursor: pointer;
+      transition: .25s; }
+  .membership input:checked + label {
+    background-color: #b1bfcd;
+    border: 1.2px solid #b1bfcd; }
+    .membership input:checked + label > * {
+      content: url("img/card-white.svg"); }
+.membership label > * {
+  position: relative;
+  top: 13px;
+  left: 14px; }
+.membership label {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle; }
+.membership span {
+  position: relative;
+  margin-right: 13px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #b1bfcd; }
+
+.submit input {
+  width: 158.7px;
+  height: 53px;
+  border-radius: 5.3px;
+  background-color: #f5f8f9;
+  border: 0;
+  margin: 5px 10px;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center; }
+  .submit input:hover {
+    cursor: pointer; }
+.submit .save {
+  color: #fff;
+  background-color: #60e6c5; }
+
+@media all and (max-width: 1250px) {
+  .item-1 h1 {
+    font-size: 24px;
+    padding-top: 100px; }
+  .item-1 p {
+    font-size: 18px; } }
+@media all and (max-width: 1040px) {
+  .container {
+    flex-wrap: wrap;
+    min-width: 320px;
+    padding: 0; }
+
+  .item {
+    flex-basis: 100%;
+    border-radius: 0; }
+
+  .form-container {
+    width: 100%;
+    grid-template-areas: "name-h" "name-c" "gender-h" "gender-c" "dob-h" "dob-c" "email-h" "email-c" "mobile-h" "mobile-c" "id-h" "id-c" "card-h" "card-c" "save-c";
+    justify-content: center; }
+
+  .item-1 {
+    height: 860px; }
+
+  .item-1-toggle {
+    transform: rotate(90deg);
+    padding: 0; }
+
+  .item-3 {
+    padding: 69px 20px; }
+    .item-3 h1 {
+      padding: 0; }
+    .item-3 p {
+      padding: 20px 0 0 0; }
+
+  .heading {
+    width: 100%;
+    min-width: 280px; }
+
+  .content {
+    width: 100% !important;
+    min-width: 280px; }
+
+  .content-8 {
+    margin: 0 auto;
+    width: 280px; }
+
+  .content-4 {
+    width: 100%;
+    text-align: right; }
+
+  .invalid-email {
+    left: 0; }
+
+  .submit input {
+    margin: 0;
+    width: 280px; }
+  .submit .save {
+    margin-top: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
