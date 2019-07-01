@@ -1,0 +1,44 @@
+
+.item-1 {
+  border-top-left-radius: 42.5px;
+  border-bottom-left-radius: 42.5px;
+  height: 892px;
+  text-align: center;
+
+  h1 {
+    padding-top: 117px;
+    font-family: Arial;
+    font-size: 36px;
+    color: $text-dark;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    font-weight: bold;
+  }
+
+  p {
+    padding-top: 17px;
+    padding-bottom: 76.8px;
+    font-family: Arial;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    color: $text-dark;
+  }
+}
+
+.profile {
+  padding-top: 117px;
+
+  &:hover {
+    content: url("img/profile-hover.svg");
+    cursor: pointer;
+  }
+}
+/* TOGGLE "BUTTON" */
+@import "toggle-button";
+/* END OF TOGGLE "BUTTON"*/

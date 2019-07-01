@@ -1,0 +1,28 @@
+.invalid {
+  color: $orange;
+}
+
+
+.invalid-email {
+  position: relative;
+  color: $orange;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  width: 114px;
+  height: 14px;
+  left: 265px;
+  top: -1px;
+}
+
+.dot {
+  position: relative;
+  top: -10px;
+  padding: 0;
+  margin: 0;
+}

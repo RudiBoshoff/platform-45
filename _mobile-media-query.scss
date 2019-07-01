@@ -1,0 +1,98 @@
+@media all and (max-width: 1040px) {
+  // FLEXBOX
+  .container {
+    flex-wrap: wrap;
+    min-width: 320px;
+    padding: 0;
+  }
+
+  .item {
+    flex-basis: 100%;
+    border-radius: 0;
+  }
+
+  // GRID
+  .form-container {
+    width: 100%;
+    grid-template-areas:
+    "name-h"
+    "name-c"
+    "gender-h"
+    "gender-c"
+    "dob-h"
+    "dob-c"
+    "email-h"
+    "email-c"
+    "mobile-h"
+    "mobile-c"
+    "id-h"
+    "id-c"
+    "card-h"
+    "card-c"
+    "save-c";
+    justify-content: center;
+  }
+
+
+  // PROFILE
+  .item-1 {
+    height: 860px;
+  }
+
+  .item-1-toggle {
+    transform: rotate(90deg);
+    padding: 0;
+  }
+
+  // DETAILS
+  .item-3 {
+    padding: 69px 20px;
+
+    h1 {
+      padding: 0;
+    }
+
+    p {
+      padding: 20px 0 0 0;
+    }
+  }
+
+  // FORM
+  .heading {
+    width: 100%;
+    min-width: 280px;
+  }
+
+  .content {
+    width: 100% !important;
+    min-width: 280px;
+  }
+
+  .content-8 {
+    // align save and cancel buttons
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  .content-4 {
+    // invalid styling
+    width: 100%;
+    text-align: right;
+  }
+
+  .invalid-email {
+    left: 0;
+  }
+
+  .submit {
+    // save/cancel styling
+    input {
+      margin: 0;
+      width: 280px;
+    }
+
+    .save {
+      margin-top: 10px;
+    }
+  }
+}

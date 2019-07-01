@@ -1,0 +1,23 @@
+.container {
+  padding: 66px 37px;
+  display: flex;
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.item-1 {
+  background-color: $sunflower-yellow;
+  flex-basis: 552.5px;
+}
+
+.item-2 {
+  background-color: #fff;
+  flex-basis: 807.5px;
+}
+
+.item-3 {
+  background-color: $orange;
+  flex-basis: 807.5px;
+}
