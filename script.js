@@ -1,7 +1,7 @@
 // RUDI BOSHOFF
 
 // BLACK TOGGLE BUTTON ANIMATIONS
-$(".item-1-toggle img").click(function () {
+$(".item-1-toggle img").click(function() {
   $(".item-2").toggleClass("hidden");
   $(".item-3").toggleClass("hidden");
   $(".item-1-toggle img").toggleClass("rotate");
@@ -10,7 +10,7 @@ $(".item-1-toggle img").click(function () {
 
 
 // EMAIL ERROR CSS STYLING
-$("input[name=email]").change(function () {
+$("input[name=email]").change(function() {
   if ($("input[name=email]").is(":invalid")) {
     // invalid email address
     $(".email label").addClass("invalid");
@@ -23,7 +23,7 @@ $("input[name=email]").change(function () {
 });
 
 // CANCEL BUTTON REMOVE INVALID EMAIL CSS STYLING
-$("input[name=cancel").click(function () {
+$("input[name=cancel").click(function() {
   $(".email label").removeClass("invalid");
   $(".email span").addClass("hidden");
 })

@@ -3,8 +3,6 @@
   border-bottom-right-radius: 42.5px;
   padding: 100px 20px;
 }
-
-
 // DISPLAY GRID
 .form-container {
   margin: 0 auto;
@@ -13,7 +11,7 @@
   grid-template-areas:
   "name-h name-c"
   "gender-h gender-c"
-  "dob-h  dob-c"
+  "dob-h dob-c"
   "email-h email-c"
   "mobile-h mobile-c"
   "id-h id-c"
@@ -41,107 +39,147 @@
   }
 }
 // END OF DISPLAY GRID
-
-
 // GRID AREA
-.heading-1 {grid-area: name-h;}
-.heading-2 {grid-area: gender-h;}
-.heading-3 {grid-area: dob-h;}
-.heading-4 {grid-area: email-h;}
-.heading-5 {grid-area: mobile-h;}
-.heading-6 {grid-area: id-h;}
-.heading-7 {grid-area: card-h;}
+.heading-1 {
+  grid-area: name-h;
+}
 
-.content-1 {grid-area: name-c;}
-.content-2 {grid-area: gender-c;}
-.content-3 {grid-area: dob-c;}
-.content-4 {grid-area: email-c;}
-.content-5 {grid-area: mobile-c;}
-.content-6 {grid-area: id-c;}
-.content-7 {grid-area: card-c;}
-.content-8 {grid-area: save-c;
-            text-align: center;}
+.heading-2 {
+  grid-area: gender-h;
+}
+
+.heading-3 {
+  grid-area: dob-h;
+}
+
+.heading-4 {
+  grid-area: email-h;
+}
+
+.heading-5 {
+  grid-area: mobile-h;
+}
+
+.heading-6 {
+  grid-area: id-h;
+}
+
+.heading-7 {
+  grid-area: card-h;
+}
+
+.content-1 {
+  grid-area: name-c;
+}
+
+.content-2 {
+  grid-area: gender-c;
+}
+
+.content-3 {
+  grid-area: dob-c;
+}
+
+.content-4 {
+  grid-area: email-c;
+}
+
+.content-5 {
+  grid-area: mobile-c;
+}
+
+.content-6 {
+  grid-area: id-c;
+}
+
+.content-7 {
+  grid-area: card-c;
+}
+
+.content-8 {
+  grid-area: save-c;
+  text-align: center;
+}
 // END OF GRID AREA
-
-
 // FORM ELEMENTS
 .name {
-	input {
+  input {
     // font-family: HelveticaNeue; NOT WORKING
-		font-family: Helvetica;
-		font-weight: 500;
-		color: $charcoal-grey;
+    font-family: Helvetica;
+    font-weight: 500;
+    color: $charcoal-grey;
     width: 100%;
-  	border: 0;
-  	padding: 17px 20px;
-  	box-sizing: border-box;
-  	height: 53px;
-  	border-radius: 5.3px;
-  	font-size: 16px;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: normal;
-  	letter-spacing: normal;
-  	text-align: left;
-  	background-color: $pale-grey;
-  	&:hover {
-  		border: solid 1.2px $cloudy-blue;
-  		cursor: pointer;
-  		transition: .25s;
-  	}
-	}
+    border: 0;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    height: 53px;
+    border-radius: 5.3px;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    background-color: $pale-grey;
+
+    &:hover {
+      border: solid 1.2px $cloudy-blue;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+  }
 }
 
 .gender {
-	input {
-		display: none;
-		&+label {
-			display: inline-block;
-			background-color: $pale-grey;
-			border: 1.2px solid $pale-grey;
-			border-radius: 100%;
-			height: 53px;
-			width: 52.9px;
-			&:hover {
-				border: 1.2px solid $cloudy-blue-two;
-				cursor: pointer;
-				transition: .25s;
-			}
-		}
-		&:checked {
-			&+label {
-				background-color: $cloudy-blue-two;
-				border: 1.2px solid $cloudy-blue-two;
-			}
-		}
-	}
+  input {
+    display: none;
 
+    &+label {
+      display: inline-block;
+      background-color: $pale-grey;
+      border: 1.2px solid $pale-grey;
+      border-radius: 100%;
+      height: 53px;
+      width: 52.9px;
 
-  input[value="male"] {
-  	&:checked {
-  		&+label {
-  			>* {
-          // changes male icon when checked
-  				content: url("img/male-white.svg");
-  				width: 25.4px;
-  				height: 25.4px;
-  			}
-  		}
-  	}
+      &:hover {
+        border: 1.2px solid $cloudy-blue-two;
+        cursor: pointer;
+        transition: 0.25s;
+      }
+    }
+
+    &:checked {
+      &+label {
+        background-color: $cloudy-blue-two;
+        border: 1.2px solid $cloudy-blue-two;
+      }
+    }
   }
 
+  input[value="male"] {
+    &:checked {
+      &+label {
+        > * {
+          // changes male icon when checked
+          content: url("img/male-white.svg");
+          width: 25.4px;
+          height: 25.4px;
+        }
+      }
+    }
+  }
 
   input[value="female"] {
     &:checked {
       &+label {
-        >* {
+        > * {
           // changes female icon when checked
           content: url("img/female-white.svg");
         }
       }
     }
   }
-
 
   label > * {
     // aligns radio imgs
@@ -150,7 +188,6 @@
     left: 14px;
   }
 
-
   label {
     // aligns labels with headings
     margin-right: 10px;
@@ -158,57 +195,60 @@
     vertical-align: middle;
   }
 
-
   span {
-  // positions radio button text
-  position: relative;
-  margin-right: 13px;
-  font-family: Arial;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: $cloudy-blue-two;
+    // positions radio button text
+    position: relative;
+    margin-right: 13px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $cloudy-blue-two;
   }
 }
 
 .dob {
   input {
     width: 100%;
-  	border: 0;
-  	padding: 17px 20px;
-  	box-sizing: border-box;
-  	height: 53px;
-  	border-radius: 5.3px;
-  	font-family: Arial;
-  	font-size: 16px;
-  	font-weight: normal;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: normal;
-  	letter-spacing: normal;
-  	text-align: left;
-  	background-color: $pale-grey;
+    border: 0;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    height: 53px;
+    border-radius: 5.3px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    background-color: $pale-grey;
     color: $cloudy-blue-two;
-  	&:hover {
-  		border: solid 1.2px $cloudy-blue;
-  		cursor: pointer;
-  		transition: .25s;
-  	}
+
+    &:hover {
+      border: solid 1.2px $cloudy-blue;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
     &:invalid {
       // invalid styling
       border: solid 1.2px var(--orange);
       background-color: var(--pale-grey);
       color: var(--orange);
     }
+
     &::-webkit-inner-spin-button {
       // remove up and down arrow
       -webkit-appearance: none;
       display: none;
     }
+
     &::-webkit-calendar-picker-indicator {
       color: rgba(0, 0, 0, 0);
       opacity: 1;
@@ -216,6 +256,7 @@
       background: url("img/dob.svg") no-repeat;
       width: 20px;
       height: 20px;
+
       &:hover {
         cursor: pointer;
       }
@@ -226,26 +267,28 @@
 .email {
   input {
     width: 100%;
-  	border: 0;
-  	padding: 17px 20px;
-  	box-sizing: border-box;
-  	height: 53px;
-  	border-radius: 5.3px;
-  	font-family: Arial;
-  	font-size: 16px;
-  	font-weight: normal;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: normal;
-  	letter-spacing: normal;
-  	text-align: left;
-  	background-color: $pale-grey;
+    border: 0;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    height: 53px;
+    border-radius: 5.3px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    background-color: $pale-grey;
     color: $cloudy-blue-two;
-  	&:hover {
-  		border: solid 1.2px $cloudy-blue;
-  		cursor: pointer;
-  		transition: .25s;
-  	}
+
+    &:hover {
+      border: solid 1.2px $cloudy-blue;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
     &:invalid {
       border: solid 1.2px $orange;
       background-color: $pale-grey;
@@ -253,91 +296,94 @@
     }
   }
 }
-
 // INVALID EMAIL STYLING
-@import "invalid-email";
-// END OF INVALID EMAIL STYLING
+@import "invalid-email"; // END OF INVALID EMAIL STYLING
 
 .mobile {
   input {
     width: 100%;
-  	border: 0;
-  	padding: 17px 20px;
-  	box-sizing: border-box;
-  	height: 53px;
-  	border-radius: 5.3px;
-  	font-family: Arial;
-  	font-size: 16px;
-  	font-weight: normal;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: normal;
-  	letter-spacing: normal;
-  	text-align: left;
-  	background-color: $pale-grey;
+    border: 0;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    height: 53px;
+    border-radius: 5.3px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    background-color: $pale-grey;
     color: $cloudy-blue-two;
-  	&:hover {
-  		border: solid 1.2px $cloudy-blue;
-  		cursor: pointer;
-  		transition: .25s;
-  	}
+
+    &:hover {
+      border: solid 1.2px $cloudy-blue;
+      cursor: pointer;
+      transition: 0.25s;
+    }
   }
 }
 
 .customer-ID {
   input {
     width: 100%;
-  	border: 0;
-  	padding: 17px 20px;
-  	box-sizing: border-box;
-  	height: 53px;
-  	border-radius: 5.3px;
-  	font-family: Arial;
-  	font-size: 16px;
-  	font-weight: normal;
-  	font-style: normal;
-  	font-stretch: normal;
-  	line-height: normal;
-  	letter-spacing: normal;
-  	text-align: left;
-  	background-color: $pale-grey;
+    border: 0;
+    padding: 17px 20px;
+    box-sizing: border-box;
+    height: 53px;
+    border-radius: 5.3px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    background-color: $pale-grey;
     color: $cloudy-blue-two;
-  	&:hover {
-  		border: solid 1.2px $cloudy-blue;
-  		cursor: pointer;
-  		transition: .25s;
-  	}
+
+    &:hover {
+      border: solid 1.2px $cloudy-blue;
+      cursor: pointer;
+      transition: 0.25s;
+    }
   }
 }
 
 .membership {
   input {
-		display: none;
-		&+label {
-			display: inline-block;
-			background-color: $pale-grey;
-			border: 1.2px solid $pale-grey;
-			border-radius: 100%;
-			height: 53px;
-			width: 52.9px;
-			&:hover {
-				border: 1.2px solid $cloudy-blue-two;
-				cursor: pointer;
-				transition: .25s;
-			}
-		}
-		&:checked {
-			&+label {
-				background-color: $cloudy-blue-two;
-				border: 1.2px solid $cloudy-blue-two;
-        >* {
+    display: none;
+
+    &+label {
+      display: inline-block;
+      background-color: $pale-grey;
+      border: 1.2px solid $pale-grey;
+      border-radius: 100%;
+      height: 53px;
+      width: 52.9px;
+
+      &:hover {
+        border: 1.2px solid $cloudy-blue-two;
+        cursor: pointer;
+        transition: 0.25s;
+      }
+    }
+
+    &:checked {
+      &+label {
+        background-color: $cloudy-blue-two;
+        border: 1.2px solid $cloudy-blue-two;
+
+        > * {
           // changes card icon when checked
           content: url("img/card-white.svg");
         }
-			}
-		}
-	}
-
+      }
+    }
+  }
 
   label > * {
     // aligns radio imgs
@@ -345,7 +391,6 @@
     top: 13px;
     left: 14px;
   }
-
 
   label {
     // aligns labels with headings
@@ -355,45 +400,47 @@
   }
 
   span {
-  // positions radio button text
-  position: relative;
-  margin-right: 13px;
-  font-family: Arial;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: $cloudy-blue-two;
+    // positions radio button text
+    position: relative;
+    margin-right: 13px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: $cloudy-blue-two;
   }
 }
 
 .submit {
-	input {
-		width: 158.7px;
-		height: 53px;
-		border-radius: 5.3px;
-		background-color: $pale-grey;
-		border: 0;
-		margin: 5px 10px;
-		font-family: Arial;
-		font-size: 16px;
-		font-weight: normal;
-		font-style: normal;
-		font-stretch: normal;
-		line-height: normal;
-		letter-spacing: normal;
-		text-align: center;
-		&:hover {
-			cursor: pointer;
-		}
-	}
-	.save {
+  input {
+    width: 158.7px;
+    height: 53px;
+    border-radius: 5.3px;
+    background-color: $pale-grey;
+    border: 0;
+    margin: 5px 10px;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .save {
     // styles save button
-		color: #fff;;
-		background-color: $tiffany-blue;
-	}
+    color: #fff;
+    background-color: $tiffany-blue;
+  }
 }
 // END OF FORM ELEMENTS

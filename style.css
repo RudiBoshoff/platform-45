@@ -118,7 +118,7 @@ body {
   margin: 0 auto;
   display: grid;
   width: 520px;
-  grid-template-areas: "name-h name-c" "gender-h gender-c" "dob-h  dob-c" "email-h email-c" "mobile-h mobile-c" "id-h id-c" "card-h card-c" ". save-c";
+  grid-template-areas: "name-h name-c" "gender-h gender-c" "dob-h dob-c" "email-h email-c" "mobile-h mobile-c" "id-h id-c" "card-h card-c" ". save-c";
   grid-gap: 20px; }
   .form-container .heading {
     width: 120px;
@@ -202,7 +202,7 @@ body {
   .name input:hover {
     border: solid 1.2px #cad7dd;
     cursor: pointer;
-    transition: .25s; }
+    transition: 0.25s; }
 
 .gender input {
   display: none; }
@@ -216,7 +216,7 @@ body {
     .gender input + label:hover {
       border: 1.2px solid #b1bfcd;
       cursor: pointer;
-      transition: .25s; }
+      transition: 0.25s; }
   .gender input:checked + label {
     background-color: #b1bfcd;
     border: 1.2px solid #b1bfcd; }
@@ -267,7 +267,7 @@ body {
   .dob input:hover {
     border: solid 1.2px #cad7dd;
     cursor: pointer;
-    transition: .25s; }
+    transition: 0.25s; }
   .dob input:invalid {
     border: solid 1.2px var(--orange);
     background-color: var(--pale-grey);
@@ -305,7 +305,7 @@ body {
   .email input:hover {
     border: solid 1.2px #cad7dd;
     cursor: pointer;
-    transition: .25s; }
+    transition: 0.25s; }
   .email input:invalid {
     border: solid 1.2px #ff9200;
     background-color: #f5f8f9;
@@ -356,7 +356,7 @@ body {
   .mobile input:hover {
     border: solid 1.2px #cad7dd;
     cursor: pointer;
-    transition: .25s; }
+    transition: 0.25s; }
 
 .customer-ID input {
   width: 100%;
@@ -378,7 +378,7 @@ body {
   .customer-ID input:hover {
     border: solid 1.2px #cad7dd;
     cursor: pointer;
-    transition: .25s; }
+    transition: 0.25s; }
 
 .membership input {
   display: none; }
@@ -392,7 +392,7 @@ body {
     .membership input + label:hover {
       border: 1.2px solid #b1bfcd;
       cursor: pointer;
-      transition: .25s; }
+      transition: 0.25s; }
   .membership input:checked + label {
     background-color: #b1bfcd;
     border: 1.2px solid #b1bfcd; }
@@ -473,7 +473,7 @@ body {
     .item-3 h1 {
       padding: 0; }
     .item-3 p {
-      padding: 20px 0 0 0; }
+      padding: 20px 0 0; }
 
   .heading {
     width: 100%;

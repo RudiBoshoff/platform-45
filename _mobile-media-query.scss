@@ -10,7 +10,6 @@
     flex-basis: 100%;
     border-radius: 0;
   }
-
   // GRID
   .form-container {
     width: 100%;
@@ -32,8 +31,6 @@
     "save-c";
     justify-content: center;
   }
-
-
   // PROFILE
   .item-1 {
     height: 860px;
@@ -43,7 +40,6 @@
     transform: rotate(90deg);
     padding: 0;
   }
-
   // DETAILS
   .item-3 {
     padding: 69px 20px;
@@ -53,10 +49,9 @@
     }
 
     p {
-      padding: 20px 0 0 0;
+      padding: 20px 0 0;
     }
   }
-
   // FORM
   .heading {
     width: 100%;
